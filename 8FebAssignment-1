@@ -1,0 +1,32 @@
+                    /*Renuka.D ADCGWK  Assignment-1*/
+/*To separate even numbers one side and odd numbers one side in given array*/
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+    int a[100],i,num;
+    printf("Enter size of the array\n");
+    scanf("%d",&num);
+    printf("Enter the elements of the array\n");
+    for(i=0;i<num;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("\nEven numbers of the array are \n");
+     for(i=0;i<num;i++)
+     {
+        if(a[i]%2==0)
+        {
+            printf("%d \t",a[i]);
+        }
+    }
+    printf("\nOdd numbers of the array are \n");
+     for(i=0;i<=num;i++)
+     {
+        if (a[i]%2==1)
+        {
+            printf("%d \t",a[i]);
+        }
+    }
+    getch();
+}
